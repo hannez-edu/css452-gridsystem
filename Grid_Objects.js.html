@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding meta -->
+    
+
+    <!-- Adding external script-->
+    
+
+    <!-- Adding external style-->
+    
+
+    <!-- Adding scripts-->
+    
+
+    <!-- Adding style-->
+    
+
+    <!-- Adding overlay script-->
+    
+
+    <!-- Adding overlay style-->
+    
+
+
+    <title>Grid_Objects.js</title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-light.css">
+    
+<svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/>
+                <path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/>
+            </g>
+        </symbol>
+    </defs>
+</svg>
+
+</head>
+<body>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html"><div class="text">Home</div></a></h2><div class="search-box"><input type="text" placeholder="Search..." id="search-box" /><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-list-div"><h3>Classes</h3><ul><li class="accordion collapsed" id=15865><div class="accordion-title"><a href="Grid.html">Grid</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+    <path 
+        fill-rule="evenodd" 
+        clip-rule="evenodd" 
+        d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z">
+    </path>
+</svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Grid.html#addObjectToGrid">addObjectToGrid</a></li><li data-type='method'><a href="Grid.html#addRangeWalls">addRangeWalls</a></li><li data-type='method'><a href="Grid.html#addTileWall">addTileWall</a></li><li data-type='method'><a href="Grid.html#addWall">addWall</a></li><li data-type='method'><a href="Grid.html#addWallRange">addWallRange</a></li><li data-type='method'><a href="Grid.html#AStarSearch">AStarSearch</a></li><li data-type='method'><a href="Grid.html#changeObjectPosition">changeObjectPosition</a></li><li data-type='method'><a href="Grid.html#draw">draw</a></li><li data-type='method'><a href="Grid.html#editRangeCollision">editRangeCollision</a></li><li data-type='method'><a href="Grid.html#editRangeTexture">editRangeTexture</a></li><li data-type='method'><a href="Grid.html#editRangeVisible">editRangeVisible</a></li><li data-type='method'><a href="Grid.html#editTileCollision">editTileCollision</a></li><li data-type='method'><a href="Grid.html#editTileTexture">editTileTexture</a></li><li data-type='method'><a href="Grid.html#editTileVisible">editTileVisible</a></li><li data-type='method'><a href="Grid.html#getIDPosition">getIDPosition</a></li><li data-type='method'><a href="Grid.html#getNeighbors">getNeighbors</a></li><li data-type='method'><a href="Grid.html#getTileAtIndex">getTileAtIndex</a></li><li data-type='method'><a href="Grid.html#getTileAtWC">getTileAtWC</a></li><li data-type='method'><a href="Grid.html#getTileHeight">getTileHeight</a></li><li data-type='method'><a href="Grid.html#getTileWidth">getTileWidth</a></li><li data-type='method'><a href="Grid.html#isWCValidInGrid">isWCValidInGrid</a></li><li data-type='method'><a href="Grid.html#manhattanDistance">manhattanDistance</a></li><li data-type='method'><a href="Grid.html#moveObjectPositionDir">moveObjectPositionDir</a></li><li data-type='method'><a href="Grid.html#readySearch">readySearch</a></li><li data-type='method'><a href="Grid.html#removeObjectFromGrid">removeObjectFromGrid</a></li><li data-type='method'><a href="Grid.html#removeTileWall">removeTileWall</a></li><li data-type='method'><a href="Grid.html#removeWallRange">removeWallRange</a></li><li data-type='method'><a href="Grid.html#setVisualizeEdges">setVisualizeEdges</a></li></ul></li><li class="accordion collapsed" id=2122570><div class="accordion-title"><a href="Tile.html">Tile</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+    <path 
+        fill-rule="evenodd" 
+        clip-rule="evenodd" 
+        d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z">
+    </path>
+</svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Tile.html#addWall">addWall</a></li><li data-type='method'><a href="Tile.html#draw">draw</a></li><li data-type='method'><a href="Tile.html#getC">getC</a></li><li data-type='method'><a href="Tile.html#getCollision">getCollision</a></li><li data-type='method'><a href="Tile.html#getD">getD</a></li><li data-type='method'><a href="Tile.html#getF">getF</a></li><li data-type='method'><a href="Tile.html#getH">getH</a></li><li data-type='method'><a href="Tile.html#getMoves">getMoves</a></li><li data-type='method'><a href="Tile.html#getP">getP</a></li><li data-type='method'><a href="Tile.html#getWalls">getWalls</a></li><li data-type='method'><a href="Tile.html#getXPosWC">getXPosWC</a></li><li data-type='method'><a href="Tile.html#getYPosWC">getYPosWC</a></li><li data-type='method'><a href="Tile.html#hasP">hasP</a></li><li data-type='method'><a href="Tile.html#isVisible">isVisible</a></li><li data-type='method'><a href="Tile.html#readySearch">readySearch</a></li><li data-type='method'><a href="Tile.html#removeWall">removeWall</a></li><li data-type='method'><a href="Tile.html#setC">setC</a></li><li data-type='method'><a href="Tile.html#setCollision">setCollision</a></li><li data-type='method'><a href="Tile.html#setD">setD</a></li><li data-type='method'><a href="Tile.html#setGridLineVisibility">setGridLineVisibility</a></li><li data-type='method'><a href="Tile.html#setH">setH</a></li><li data-type='method'><a href="Tile.html#setP">setP</a></li><li data-type='method'><a href="Tile.html#setTexture">setTexture</a></li><li data-type='method'><a href="Tile.html#setVisible">setVisible</a></li><li data-type='method'><a href="Tile.html#setWallVisibility">setWallVisibility</a></li></ul></li></ul>
+
+<h3><a href="tutorial.html">Tutorial</a></h3>
+<h3><a href="demo/Dekema_Hannez_Grid_API/public_html/index.html">Demo</a></h3>
+
+</div>
+</nav>
+
+<div id="main">
+    
+    <h1 id='page-title' class="page-title">Grid_Objects.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * Manages the object interactions explicitly given to the grid object. Defines object
+ * behaviors such as movement, pathfinding, etc. Does not define interactions for objs 
+ * not explicitly given to the Grid to manage.
+ * 
+ */
+
+
+/**
+ * Adds an object to the Grid system. Movement &amp; positioning of this object are then 
+ * controlled through the Grid object itself.
+ * @param {Renderable} obj - The object to be added. MUST have an associated Xform, else the function will error.
+ * @returns {number} The ID to use to retrieve this object in the grid to perform future functions on it. -1 If object 
+ * couldn't be added.
+ */
+Grid.prototype.addObjectToGrid = function(obj) {
+    // Error chk: Given object must have an Xform to modify position.
+    try {
+        obj.getXform();
+    } catch (error) {
+        console.log(error);
+        return -1;
+    }
+
+    // Add object to mObject array. Put the object in the first available spot.
+    var id;
+    var added = false;
+    for (id = 0; id &lt; this.mObjects.length; id++) {
+      if (this.mObjects[id] === null) {
+        this.mObjects[id] = obj;
+        added = true;
+        break;
+      }
+    }
+    // mObjects was not large enough to hold the object; push it to the end.
+    if (!added) {
+      this.mObjects.push(obj);
+      id = this.mObjects.length - 1;
+    }
+
+    var pos = obj.getXform().getPosition();
+    var tileIndex = this.getTileAtWC(pos[0], pos[1]);
+    var tile = null;
+
+    // Invalid init tile position
+    if (tileIndex[0] === -1 &amp;&amp; tileIndex[1] === -1) {
+      var indexX = 0;
+      var indexY = 0;
+
+      tile = this.getTileAtIndex(indexX, indexY);
+
+      // Keep looking for a new default tile until we find one that is not occupied.
+      while (tile.getCollision()) {
+        indexX++;
+        tile = this.getTileAtIndex(indexX, indexY);
+
+        // Entire X row searched and no available spots; move up a row.
+        if (tile === null) {
+          indexX = 0;
+          indexY++;
+          tile = this.getTileAtIndex(indexX, indexY);
+        }
+
+        // Termination case if all grid tiles have been checked &amp; are full. ******
+        if (indexY === (this.mGridH - 1) &amp;&amp; indexX === (this.mGridW - 1) &amp;&amp; tile === null) {
+          console.log("Object could not be added; Grid is full!");
+          return -1;
+        }
+      }
+    } else {
+      tile = this.getTileAtIndex(tileIndex[0], tileIndex[1]);
+    }
+    
+    // We now have our tile to tie the object to; Send it to its position &amp; enable collision.
+    obj.getXform().setPosition(tile.getXPosWC(), tile.getYPosWC());
+    tile.setCollision(true);
+
+    // Leaving having the size of the object fit within a grid bound up to the game dev to do.
+
+    // Addition successful. Return id.
+    return id;
+};
+
+// Given the id of an object belonging to the grid, removes the object from grid control.
+// Note, this does not remove the object from existence, rather just removes its direct
+// ties to the grid. 
+// Returns true if removal was successful, false otherwise.
+// Requires the array to stay at the same size, else ids may no longer return expected objs.
+
+/**
+ * Removes the desired object from Grid system control. This does not remove the object from the 
+ * world.
+ * @param {number} id - The id of an object currently existing in the grid.
+ * @returns {boolean} True if the object corresponding to id was removed, false otherwise.
+ */
+Grid.prototype.removeObjectFromGrid = function(id) {
+  if (this.mObjects[id] === null) {
+    return false;
+  }
+
+  this.mObjects[id] = null;
+
+  return true;
+};
+
+/**
+ * Attempts to move the specified object from its current tile position to a given 
+ * tile index. Does not check for any collision in the tiles between the current tile 
+ * and the desired tile to move to, only checks the desired tile collision property.
+ * @param {number} id - The id of the object to move.
+ * @param {number} x - The x coordinate of the Grid index to move to.
+ * @param {number} y - The y coordinate of the Grid index to move to.
+ * @returns {boolean} True if the move was successful, false otherwise.
+ */
+Grid.prototype.changeObjectPosition = function(id, x, y) {
+    var obj = this.mObjects[id];
+    if (obj === null || obj === undefined) {
+        return false;
+    }
+    
+    var pos = this.getIDPosition(id);
+    
+    // Tile object is currently in.
+    var tile = this.getTileAtIndex(pos[0], pos[1]);
+    
+    var newTile = this.getTileAtIndex(x, y);
+    if (newTile === null || newTile.getCollision()) { //Invalid tile coord given, or has collision already
+        return false;
+    }
+    
+    obj.getXform().setPosition(newTile.getXPosWC(), newTile.getYPosWC());
+    tile.setCollision(false);
+    newTile.setCollision(true);
+    
+    return true;
+};
+
+// A bit redundant w/ above function at the moment, should probably rework a bit.
+
+/**
+ * Moves the object specified by the given ID one space in the given direction. Considers collision 
+ * property and current walls of the tile to move into.
+ * @param {number} id - The id of the object to move.
+ * @param {Direction} direction - The direction to move the object one tile space.
+ * @returns {boolean} True if move was successful, false otherwise.
+ */
+Grid.prototype.moveObjectPositionDir = function(id, direction) {
+    var obj = this.mObjects[id];
+    if (obj === null || obj === undefined) {
+        return false;
+    }
+    
+    var pos = this.getIDPosition(id);
+    
+    // Tile object is currently in.
+    var tile = this.getTileAtIndex(pos[0], pos[1]);
+    
+    // Wall check
+    var walls = tile.getWalls();
+    for (var i = 0; i &lt; walls.length; i++) {
+        if (direction[0] === walls[i][0] &amp;&amp; direction[1] === walls[i][1]) { // Given direction has a wall, prevent movement.
+            return false;
+        }
+    }
+    
+    var newTile = this.getTileAtIndex(pos[0] + direction[0], pos[1] + direction[1]);
+    if (newTile === null || newTile.getCollision()) { //Invalid tile coord given, or has collision already
+        return false;
+    }
+    
+    obj.getXform().setPosition(newTile.getXPosWC(), newTile.getYPosWC());
+    tile.setCollision(false);
+    newTile.setCollision(true);
+    
+    return true;
+};
+
+// Returns the position of the specified object in Grid coordinates.
+// Returns [-1, -1] if the given ID is invalid.
+
+/**
+ * Gets the Grid index position of the specified object.
+ * @param {number} id - The id of the object to get the index position of.
+ * @return {array} The x &amp; y coordinates in the Grid index of the object, [-1, -1] if object was not found.
+ */
+Grid.prototype.getIDPosition = function(id) {
+    if (this.mObjects[id] === null) {
+      return [-1, -1];
+    }
+
+    var pos = this.mObjects[id].getXform().getPosition();
+
+    // Object already exists within Grid, so we can assume this will be a valid tile.
+    return this.getTileAtWC(pos[0], pos[1]);
+};</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<footer id="footer">
+  
+</footer>
+
+<script src="scripts/third-party/prettify.js"></script>
+<script src="scripts/third-party/lang-css.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/third-party/fuse.js"></script>
+<script type="text/javascript" src="scripts/misc.js"></script>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/fix-code-block.js"></script>
+<script>
+  var list = [{"title":"Grid","link":"<a href=\"Grid.html\">Grid</a>"},{"title":"Grid#addObjectToGrid","link":"<a href=\"Grid.html#addObjectToGrid\">Grid &rtrif; addObjectToGrid</a>"},{"title":"Grid#addRangeWalls","link":"<a href=\"Grid.html#addRangeWalls\">Grid &rtrif; addRangeWalls</a>"},{"title":"Grid#addTileWall","link":"<a href=\"Grid.html#addTileWall\">Grid &rtrif; addTileWall</a>"},{"title":"Grid#addWall","link":"<a href=\"Grid.html#addWall\">Grid &rtrif; addWall</a>"},{"title":"Grid#addWallRange","link":"<a href=\"Grid.html#addWallRange\">Grid &rtrif; addWallRange</a>"},{"title":"Grid#AStarSearch","link":"<a href=\"Grid.html#AStarSearch\">Grid &rtrif; AStarSearch</a>"},{"title":"Grid#changeObjectPosition","link":"<a href=\"Grid.html#changeObjectPosition\">Grid &rtrif; changeObjectPosition</a>"},{"title":"Grid#draw","link":"<a href=\"Grid.html#draw\">Grid &rtrif; draw</a>"},{"title":"Grid#editRangeCollision","link":"<a href=\"Grid.html#editRangeCollision\">Grid &rtrif; editRangeCollision</a>"},{"title":"Grid#editRangeTexture","link":"<a href=\"Grid.html#editRangeTexture\">Grid &rtrif; editRangeTexture</a>"},{"title":"Grid#editRangeVisible","link":"<a href=\"Grid.html#editRangeVisible\">Grid &rtrif; editRangeVisible</a>"},{"title":"Grid#editTileCollision","link":"<a href=\"Grid.html#editTileCollision\">Grid &rtrif; editTileCollision</a>"},{"title":"Grid#editTileTexture","link":"<a href=\"Grid.html#editTileTexture\">Grid &rtrif; editTileTexture</a>"},{"title":"Grid#editTileVisible","link":"<a href=\"Grid.html#editTileVisible\">Grid &rtrif; editTileVisible</a>"},{"title":"Grid#getIDPosition","link":"<a href=\"Grid.html#getIDPosition\">Grid &rtrif; getIDPosition</a>"},{"title":"Grid#getNeighbors","link":"<a href=\"Grid.html#getNeighbors\">Grid &rtrif; getNeighbors</a>"},{"title":"Grid#getTileAtIndex","link":"<a href=\"Grid.html#getTileAtIndex\">Grid &rtrif; getTileAtIndex</a>"},{"title":"Grid#getTileAtWC","link":"<a href=\"Grid.html#getTileAtWC\">Grid &rtrif; getTileAtWC</a>"},{"title":"Grid#getTileHeight","link":"<a href=\"Grid.html#getTileHeight\">Grid &rtrif; getTileHeight</a>"},{"title":"Grid#getTileWidth","link":"<a href=\"Grid.html#getTileWidth\">Grid &rtrif; getTileWidth</a>"},{"title":"Grid#isWCValidInGrid","link":"<a href=\"Grid.html#isWCValidInGrid\">Grid &rtrif; isWCValidInGrid</a>"},{"title":"Grid#manhattanDistance","link":"<a href=\"Grid.html#manhattanDistance\">Grid &rtrif; manhattanDistance</a>"},{"title":"Grid#moveObjectPositionDir","link":"<a href=\"Grid.html#moveObjectPositionDir\">Grid &rtrif; moveObjectPositionDir</a>"},{"title":"Grid#readySearch","link":"<a href=\"Grid.html#readySearch\">Grid &rtrif; readySearch</a>"},{"title":"Grid#removeObjectFromGrid","link":"<a href=\"Grid.html#removeObjectFromGrid\">Grid &rtrif; removeObjectFromGrid</a>"},{"title":"Grid#removeTileWall","link":"<a href=\"Grid.html#removeTileWall\">Grid &rtrif; removeTileWall</a>"},{"title":"Grid#removeWallRange","link":"<a href=\"Grid.html#removeWallRange\">Grid &rtrif; removeWallRange</a>"},{"title":"Grid#setVisualizeEdges","link":"<a href=\"Grid.html#setVisualizeEdges\">Grid &rtrif; setVisualizeEdges</a>"},{"title":"Tile","link":"<a href=\"Tile.html\">Tile</a>"},{"title":"Tile#addWall","link":"<a href=\"Tile.html#addWall\">Tile &rtrif; addWall</a>"},{"title":"Tile#draw","link":"<a href=\"Tile.html#draw\">Tile &rtrif; draw</a>"},{"title":"Tile#getC","link":"<a href=\"Tile.html#getC\">Tile &rtrif; getC</a>"},{"title":"Tile#getCollision","link":"<a href=\"Tile.html#getCollision\">Tile &rtrif; getCollision</a>"},{"title":"Tile#getD","link":"<a href=\"Tile.html#getD\">Tile &rtrif; getD</a>"},{"title":"Tile#getF","link":"<a href=\"Tile.html#getF\">Tile &rtrif; getF</a>"},{"title":"Tile#getH","link":"<a href=\"Tile.html#getH\">Tile &rtrif; getH</a>"},{"title":"Tile#getMoves","link":"<a href=\"Tile.html#getMoves\">Tile &rtrif; getMoves</a>"},{"title":"Tile#getP","link":"<a href=\"Tile.html#getP\">Tile &rtrif; getP</a>"},{"title":"Tile#getWalls","link":"<a href=\"Tile.html#getWalls\">Tile &rtrif; getWalls</a>"},{"title":"Tile#getXPosWC","link":"<a href=\"Tile.html#getXPosWC\">Tile &rtrif; getXPosWC</a>"},{"title":"Tile#getYPosWC","link":"<a href=\"Tile.html#getYPosWC\">Tile &rtrif; getYPosWC</a>"},{"title":"Tile#hasP","link":"<a href=\"Tile.html#hasP\">Tile &rtrif; hasP</a>"},{"title":"Tile#isVisible","link":"<a href=\"Tile.html#isVisible\">Tile &rtrif; isVisible</a>"},{"title":"Tile#readySearch","link":"<a href=\"Tile.html#readySearch\">Tile &rtrif; readySearch</a>"},{"title":"Tile#removeWall","link":"<a href=\"Tile.html#removeWall\">Tile &rtrif; removeWall</a>"},{"title":"Tile#setC","link":"<a href=\"Tile.html#setC\">Tile &rtrif; setC</a>"},{"title":"Tile#setCollision","link":"<a href=\"Tile.html#setCollision\">Tile &rtrif; setCollision</a>"},{"title":"Tile#setD","link":"<a href=\"Tile.html#setD\">Tile &rtrif; setD</a>"},{"title":"Tile#setGridLineVisibility","link":"<a href=\"Tile.html#setGridLineVisibility\">Tile &rtrif; setGridLineVisibility</a>"},{"title":"Tile#setH","link":"<a href=\"Tile.html#setH\">Tile &rtrif; setH</a>"},{"title":"Tile#setP","link":"<a href=\"Tile.html#setP\">Tile &rtrif; setP</a>"},{"title":"Tile#setTexture","link":"<a href=\"Tile.html#setTexture\">Tile &rtrif; setTexture</a>"},{"title":"Tile#setVisible","link":"<a href=\"Tile.html#setVisible\">Tile &rtrif; setVisible</a>"},{"title":"Tile#setWallVisibility","link":"<a href=\"Tile.html#setWallVisibility\">Tile &rtrif; setWallVisibility</a>"}];
+  var options = 
+  setupSearch(list, options)
+</script>
+
+ 
+
+
+
+
+
+
+</body>
+</html>
